@@ -5,7 +5,8 @@
 
     .navigation {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         gap: 1rem;
     }
 
