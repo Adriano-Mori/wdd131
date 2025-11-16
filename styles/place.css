@@ -1,0 +1,133 @@
+:root {
+    --primary-red: #d91023;
+    --primary-white: #ffffff;
+    --text-dark: #111;
+    --max-width: 400px;
+    --radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--primary-red);
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    padding: 0.8rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    font-size: 2em;
+    color: var(--primary-white);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* data */
+.data {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    border-radius: var(--radius);
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .20);
+}
+
+.data h2 {
+    text-align: center;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+.data ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.data li {
+    padding: 0.35rem 0;
+}
+
+/* weather */
+.weather {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--primary-white);
+    color: var(--text-dark);
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .20);
+}
+
+.weather h2 {
+    text-align: center;
+    color: var(--primary-red);
+    margin-top: 0;
+    position: relative;
+}
+
+.weather ul {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+/* pseudoelement weather*/
+.weather h2::after {
+    content: "⛅";
+    text-align: center;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.weather-icon {
+    display: block;
+    margin: 1rem auto;
+}
+
+.weather ul {
+    list-style: none;
+    padding: 0;
+}
+
+.weather li {
+    margin: 0.5rem 0;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: var(--primary-white);
+    color: var(--primary-red);
+}
+
+/* MEDIUM SIZE */
+@media (min-width: 600px) {
+
+    .weather h2::after {
+        display: inline;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}
