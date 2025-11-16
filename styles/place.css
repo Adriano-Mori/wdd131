@@ -87,6 +87,8 @@ header h1 {
 .weather ul {
     text-align: center;
     font-family: "Oswald", sans-serif;
+    list-style: none;
+    padding: 0;
 }
 
 /* pseudoelement weather*/
@@ -100,11 +102,6 @@ header h1 {
 .weather-icon {
     display: block;
     margin: 1rem auto;
-}
-
-.weather ul {
-    list-style: none;
-    padding: 0;
 }
 
 .weather li {
