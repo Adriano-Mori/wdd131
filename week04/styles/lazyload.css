@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #555555;
+    color: #fff;
+}
+
+main {
+    margin: 0% auto;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    display: block;
+    margin: 20px auto;
+    animation: fade 5s;
+}
+
+h1 {
+    width: auto;
+    padding: 1em;
+    background-color: #333;
+}
+
+footer {
+    padding: 1em;
+    background-color: #333;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
