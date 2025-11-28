@@ -1,0 +1,24 @@
+    body {
+        font-family: 'Raleway', sans-serif;
+
+        background-color: #f9f9f9;
+        color: #222;
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1 {
+        color: #8B0000;
+        font-family: 'Bree Serif', serif;
+    }
+
+    h2 {
+        color: #8B0000;
+        font-family: 'ABeeZee',
+            sans-serif; 
+    }
+
+    .accent {
+        color: #F4A300;
+    }
