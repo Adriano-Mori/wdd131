@@ -60,3 +60,10 @@ if (window.location.pathname.includes('review.html')) {
     count++;
     localStorage.setItem('reviewCount', count);
 }
+//foter
+document.addEventListener("DOMContentLoaded", () => {
+    const lastModElement = document.getElementById("last-modified");
+    if (lastModElement) {
+        lastModElement.textContent = document.lastModified;
+    }
+});
