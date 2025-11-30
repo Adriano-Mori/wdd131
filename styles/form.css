@@ -76,12 +76,35 @@ legend {
 }
 
 /* radio and labels */
-fieldset label {
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+.rating-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.features label {
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
 }
 
 input[type="radio"],
