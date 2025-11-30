@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a Product Review Form page using html forms design, css and JavaScript">
+    <meta name=" author" content="Alex Mori">
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Product Review Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+
+
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+
+
+            </select>
+
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label>
+                    <input type="radio" name="rating" value="1" required>
+                    ☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="2" required>
+                    ☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="3" required>
+                    ☆☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="4" required>
+                    ☆☆☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="5" required>
+                    ☆☆☆☆☆
+                </label>
+
+            </fieldset>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+
+                <label>
+                    <input type="checkbox" name="features" value="durability">
+                    Durable Materials
+                </label>
+
+                <label>
+                    <input type="checkbox" name="features" value="easy_use">
+                    Ease of use
+                </label>
+
+                <label>
+                    <input type="checkbox" name="features" value="performance">
+                    Performance
+                </label>
+
+                <label>
+                    <input type="checkbox" name="features" value="design">
+                    Good Design
+                </label>
+            </fieldset>
+
+            <label for="review-text">Written Review (Optional)</label>
+            <textarea id="review-text" name="review"></textarea>
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post review!">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 • Alex Mori • Peru </p>
+    </footer>
+</body>
+
+</html>
