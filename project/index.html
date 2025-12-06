@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Peru | Home</title>
+    <title>Home | Discover Peru</title>
     <meta name="description" content="html document explaining the design of the website project">
     <meta name="author" content="Alex Mori">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/projectsite-large.css">
-    <link rel="stylesheet" href="styles/projectsite.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/projectsite.css">
+    <link rel="stylesheet" href="styles/projectsite-large.css">
+
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <nav id="navigation">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="form.html">Contact</a></li>
 
@@ -44,17 +45,17 @@
         <div class="highlights">
             <h2>◈ Highlights ◈</h2>
             <div class="highlight-item">
-                <img src="images/highlight-1-vinicunca.jpeg" width="200"
+                <img src="images/highlight-1-vinicunca.jpg" width="200"
                     alt="Vinicunca, also known as 'The 7 colors mountain', located in Cuzco" loading="lazy">
                 <p> ◇ Vinicunca Mountain - Cuzco ◇</p>
             </div>
             <div class="highlight-item">
-                <img src="images/highlight-2-huacachina.jpeg" width="200" alt="The Huacachina osasis, located in Ica"
+                <img src="images/highlight-2-huacachina.jpg" width="200" alt="The Huacachina osasis, located in Ica"
                     loading="lazy">
                 <p> ◇ Huacachina Oasis - Ica ◇</p>
             </div>
             <div class="highlight-item">
-                <img src="images/highlight-3-colca.jpeg" width="200"
+                <img src="images/highlight-3-colca.jpg" width="200"
                     alt="The Colca Canyon, one of the deepest canyons in the world, locaed in Arequipa" loading="lazy">
                 <p> ◇ Colca Canyon - Arequipa ◇</p>
             </div>
@@ -79,8 +80,21 @@
         </div>
     </main>
     <footer>
-        <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
-        <h4>Last Modification: <span id="last-modified"></span></h4>
+        <div class="footer-author">
+            <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
+            <h4>Last Modification: <span id="last-modified"></span></h4>
+        </div>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebooklogo.png" alt="Facebook Icon" width="50">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagramlogo.png" alt="Instagram Icon" width="50">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtubelogo.png" alt="YouTube Icon" width="50">
+            </a>
+        </nav>
     </footer>
 
 </html>

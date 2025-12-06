@@ -1,63 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width" , initial-scale="1.0">
-    <title>Discover Peru | Home</title>
-    <meta name="description" content="html document explaining the design of the website project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Discover Peru</title>
+    <meta name="description" content="Learn more about the Discover Peru project and its mission.">
     <meta name="author" content="Alex Mori">
-    <link rel="stylesheet" href="styles/projectsite.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/projectsite.css">
+    <link rel="stylesheet" href="styles/projectsite-large.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>◈ Discover Peru ◈</h1>
 
-        <nav>
+    <header>
+        <div class="top-bar">
+            <h1>◈ Discover Peru ◈</h1>
+            <button id="menu" aria-label="Menu">☰</button>
+        </div>
+
+        <nav id="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="form.html">Contact</a></li>
-                <li><a href="about.html" class="active">Contact</a></li>
             </ul>
-
         </nav>
         <picture class="hero">
-            <img src="images/hero-large.webp" width="1200" alt="The stronghold Machu Picchu, a landmark from Peru"
-                loading="lazy">
+            <img src="images/hero-2-large.webp" width="1200" alt="Andean people herding llamas" loading="lazy">
         </picture>
     </header>
-    <main>
 
-        <div class="highlights">
-            <h2> hello </h2>
-            <img src="images/placeholder.jpg" width="300" alt="yeah" loading="lazy">
-            <img src="images/placeholder.jpg" width="300" alt="yeah" loading="lazy">
-            <img src="images/placeholder.jpg" width="300" alt="yeah" loading="lazy">
-        </div>
-        <div class="best-attraction">
-            <h2> bonjour best atrraction</h2>
-            <img src="images/placeholder.jpg" width="400" alt="yeah" loading="lazy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nobis atque officia eos totam officiis
-                dolorem amet non quod quos, sed dolores quis consectetur vitae ratione reprehenderit dicta quasi
-                possimus ducimus est cum eveniet! Vitae, odio. Itaque cumque, odit quo vitae consequuntur deleniti
-                beatae incidunt delectus. Ut, impedit unde. Ratione ullam cum consequuntur repellat suscipit sapiente,
-                in fuga? Voluptate consequuntur enim cum dolorem. Doloribus iure exercitationem molestias, rerum
-                accusamus quod atque temporibus quidem repudiandae, consequatur numquam explicabo at sunt sit eum iste
-                eos vel ducimus natus cum, dolores earum! Sed eaque ex maxime labore aperiam assumenda. Assumenda eos
-                perspiciatis tempora?</p>
+    <main class="about">
+        <section class="about-us">
+            <h2>◇◈ About This Page ◈◇</h2>
+            <div class="content-item">
+                <img src="images/about-1.jpg" width="300" alt="Llanganuco lake landscape, located in Ancash">
+                <p>
+                    Discover Peru is student project designed to share more facts about this
+                    Andean nation.
+                    This page serves as a visual and informational site, showcasing Peru's natural
+                    beauty, deep
+                    cultural richness, and significant historical landmarks. The shows key
+                    destinations,
+                    from the ancient wonders of Machu Picchu to the vibrant geological formations of Vinicunca, the
+                    stunning desert oasis of
+                    Huacachina,the breathtaking depths of the Colca Canyon, and many more. All of this while providing
+                    interesting facts and
+                    essential visitor
+                    information.
+                </p>
+            </div>
+        </section>
 
-        </div>
+        <section class="mission">
+            <h2>◇◈ The Mission ◈◇</h2>
+            <div class="content-item">
+                <img src="images/about-2.jpg" width="300"
+                    alt="Tourists hiking in the Huascarán snow-capped Mountain, located in Ancash">
+                <p>
+                    Our main mission is to provide a simple, attractive, and informative platform for anyone who wants
+                    to learn about this
+                    amazing country. We aim to make the wonders of Peru accessible, whether you are interested in its
+                    tall Andean mountains,
+                    the secrets of its coast and desert, or the rich story of its history. Most importantly, we want to
+                    spark real
+                    curiosity, promote future travels, and encourage a deep appreciation for Peru's unique diversity.
+                </p>
+            </div>
+        </section>
+
+        <section class="created">
+            <h2>◇ Who Created This and Why? ◇</h2>
+            <div class="content-item">
+                <img src="images/about-3.jpg" width="300" alt="The guinea pig, a native species from Peru">
+                <p>
+                    This site was created as project for a web development course. During the whole
+                    process all the
+                    content, design choices, and page layouts were made from scratch using basic web technologies like
+                    HTML,
+                    CSS, and
+                    JavaScript. This
+                    site showcases how the technical skills learnt in this course were applied to a topic of cultural
+                    matter.
+                </p>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
-        <h4>Last Modification: <span id="last-modified"></span></h4>
+        <div class="footer-author">
+            <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
+            <h4>Last Modification: <span id="last-modified"></span></h4>
+        </div>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebooklogo.png" alt="Facebook Icon" width="50">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagramlogo.png" alt="Instagram Icon" width="50">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtubelogo.png" alt="YouTube Icon" width="50">
+            </a>
+        </nav>
     </footer>
+</body>
 
 </html>
