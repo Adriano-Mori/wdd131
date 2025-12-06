@@ -1,0 +1,146 @@
+:root {
+    --deep-red: #8B0000;
+    --gold: #e99700;
+    --white: #FFFFFF;
+    --black: #000000;
+    --heading-font: "Bree Serif", serif;
+    --subheading-font: "ABeeZee", sans-serif;
+    --body-font: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--black);
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--deep-red);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    padding: 1.2rem 0;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+#navigation {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+
+
+}
+
+#navigation.show {
+    display: flex;
+}
+
+#navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: var(--subheading-font);
+}
+
+#navigation a:hover {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* hero */
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* main */
+main {
+    padding: 1rem;
+}
+
+/*highlights */
+.highlights p,
+.best-attraction p strong {
+    text-align: center;
+    padding-bottom: 1em;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.highlights {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--deep-red);
+    border-radius: 6px;
+}
+
+.best-attraction {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+}
+
+.highlights h2 {
+    font-family: var(--heading-font);
+    color: var(--deep-red);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.best-attraction h2 {
+    font-family: var(--heading-font);
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.highlights img,
+.best-attraction img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.best-attraction p {
+    text-align: center;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--deep-red);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0.3rem 0;
+}

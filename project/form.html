@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Discover Peru | Home</title>
+    <meta name="description" content="html document explaining the design of the website project">
+    <meta name="author" content="Alex Mori">
+    <link rel="stylesheet" href="styles/projectsite.css">
+    <link rel="stylesheet" href="styles/projectsite-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="form.html" class="active">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Send us a message</h2>
+
+        <form id="contact-form">
+            <label>
+                Full Name:
+                <input type="text" name="fullname" required>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Select your interest:
+                <select name="interest" required>
+                    <option value="">Choose one</option>
+                    <option value="travel">Travel Information</option>
+                    <option value="culture">Peruvian Culture</option>
+                    <option value="food">Gastronomy</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Have you visited Peru?</legend>
+
+                <label><input type="radio" name="visited" value="yes" required> Yes</label>
+                <label><input type="radio" name="visited" value="no" required> No</label>
+            </fieldset>
+
+            <label>
+                Your Message:
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
+        <h4>Last Modification: <span id="last-modified"></span></h4>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+
+</html>

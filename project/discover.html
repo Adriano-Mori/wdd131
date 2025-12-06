@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site Plan - Discover Peru</title>
+    <meta name="description" content="html document explaining the design of the website project">
+    <meta name="author" content="Alex Mori">
+    <link rel="stylesheet" href="styles/projectsite.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+<body>
+    <header>
+        <h1>Discover Peru</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="form.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <picture class="hero">
+            <img src="images/discover-hero.webp" alt="Beautiful Peruvian landscapes">
+        </picture>
+    </header>
+
+    <main>
+        <section class="discover-intro">
+            <h2>Explore the Wonders of Peru</h2>
+            <p>This page highlights major Peruvian destinations, cultural elements, and key travel information.</p>
+        </section>
+
+        <section class="places-grid">
+            <article class="place-card">
+                <img src="images/place1.webp" alt="Place 1 example" loading="lazy">
+                <h3>Machu Picchu</h3>
+                <p>One of the New Seven Wonders of the World, located in Cusco.</p>
+            </article>
+
+            <article class="place-card">
+                <img src="images/place2.webp" alt="Place 2 example" loading="lazy">
+                <h3>Arequipa</h3>
+                <p>The “White City,” famous for its colonial architecture and volcano views.</p>
+            </article>
+
+            <article class="place-card">
+                <img src="images/place3.webp" alt="Place 3 example" loading="lazy">
+                <h3>Paracas & Nazca</h3>
+                <p>Coastal wildlife reserves and the mysterious Nazca Lines.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
+        <h4>Last Modification: <span id="last-modified"></span></h4>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+
+</html>
