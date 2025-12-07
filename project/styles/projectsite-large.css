@@ -123,11 +123,33 @@
         margin: 0;
     }
 
-    /* Gallery */
-    .gallery {
+    /* DISCOVER */
+
+    .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        grid-auto-rows: auto;
+        gap: 1.5rem;
+        grid-auto-flow: dense;
+    }
+
+    .culture .card-container,
+    .gastronomy .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+    }
+
+    /* FORM */
+    form {
+        gap: 2rem;
+    }
+
+    fieldset {
+        padding: 1.5rem;
+    }
+
+    .rating {
+        gap: 2rem;
     }
 
     /*footer*/

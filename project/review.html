@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover | Discover Peru</title>
-    <meta name="description" content="Get in touch with the Discover Peru project. Webpage using HTML, CSS and JS">
+    <meta name="description" content="Thanks for your review!. Webpage using HTML, CSS and JS">
     <meta name="author" content="Alex Mori">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,45 +38,13 @@
     </header>
 
     <main>
-        <h2>◈◇ Send us a message! ◇◈</h2>
-        <form id="contact-form" method="get" action="review.html">
-            <fieldset>
-                <legend>◇Personal Information◇</legend>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+        <h2>Thank You for Your Review!</h2>
+        <h3>Your Submitted Information</h3>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+        <div id="review-output"></div>
 
-                <label for="country">Country</label>
-                <input type="text" id="country" name="country">
-            </fieldset>
-
-            <fieldset>
-                <legend>◇Travel Preferences◇</legend>
-                <label for="interest">What interests you most?</label>
-                <select id="interest" name="interest" required>
-                    <option value="" disabled selected>Select a Product ...</option>
-                </select>
-
-                <label>Preferred Climate</label>
-                <div class="rating">
-                    <label><input type="radio" name="climate" value="coast" required> Coast</label>
-                    <label><input type="radio" name="climate" value="andes"> Andes</label>
-                    <label><input type="radio" name="climate" value="amazon"> Amazon</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>◇Comments◇</legend>
-                <label for="comments">Your thoughts</label>
-                <textarea id="comments" name="comments"></textarea>
-            </fieldset>
-
-            <button type="submit">Submit</button>
-        </form>
+        <p><strong>Total reviews submitted:</strong> <span id="review-count"></span></p>
     </main>
-
     <footer>
         <div class="footer-author">
             <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>

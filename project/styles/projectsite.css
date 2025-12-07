@@ -153,6 +153,7 @@ main {
     border-radius: 8px;
     margin: 1rem auto;
     display: block;
+
 }
 
 .about-us {
@@ -185,6 +186,164 @@ main {
 
     color: var(--black);
 }
+
+/* DISCOVER PAGE */
+/* Facts */
+.facts,
+.culture-gastronomy {
+    width: 100vw;
+    position: relative;
+    padding: 4rem 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.facts h2,
+.culture-gastronomy h2 {
+
+    font-family: var(--heading-font);
+    color: var(--white);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.card-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--white);
+    border: 2px solid var(--deep-red);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+
+}
+
+.card img {
+    border-radius: 7px;
+    padding-top: 1em;
+}
+
+.card h3 {
+    font-family: var(--subheading-font);
+    color: var(--deep-red);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+/* backgroundfact1 */
+.facts {
+    background-image: url('../images/facts-bg.webp');
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    padding: 4rem 2rem;
+}
+
+.culture-gastronomy {
+    background-image: url('../images/facts-bg-2.webp');
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    padding: 4rem 2rem;
+}
+
+/*FORM*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--black);
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    border: 2px solid var(--deep-red);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: 700;
+}
+
+label {
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+
+input[type="text"],
+select,
+textarea {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: white;
+    width: 100%;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.rating {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"] {
+    background: var(--deep-red);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background: var(--gold);
+}
+
+
 
 /* footer */
 footer {

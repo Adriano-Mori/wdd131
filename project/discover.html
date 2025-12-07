@@ -1,68 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Site Plan - Discover Peru</title>
-    <meta name="description" content="html document explaining the design of the website project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Discover Peru</title>
+    <meta name="description"
+        content="Learn more about the culture, geography and fun facts of Perú. Webpage using HTML, CSS and JS">
     <meta name="author" content="Alex Mori">
-    <link rel="stylesheet" href="styles/projectsite.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/projectsite.css">
+    <link rel="stylesheet" href="styles/projectsite-large.css">
+
+</head>
 
 <body>
+
     <header>
-        <h1>Discover Peru</h1>
-        <nav>
+        <div class="top-bar">
+            <h1>◈ Discover Peru ◈</h1>
+            <button id="menu" aria-label="Menu">☰</button>
+        </div>
+
+        <nav id="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="discover.html" class="active">Discover</a></li>
                 <li><a href="form.html">Contact</a></li>
-                <li><a href="references.html">References</a></li>
             </ul>
         </nav>
 
-        <picture class="hero">
-            <img src="images/discover-hero.webp" alt="Beautiful Peruvian landscapes">
-        </picture>
     </header>
 
-    <main>
-        <section class="discover-intro">
-            <h2>Explore the Wonders of Peru</h2>
-            <p>This page highlights major Peruvian destinations, cultural elements, and key travel information.</p>
+    <main class="discover">
+
+        <section class="facts">
+            <h2>◈ Facts About Peru ◈</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Coast</h3>
+                    <p>The Peruvian coast is mostly dry and desert-like, with mild temperatures in the north and cooler
+                        Humboldt-influenced weather in the south.</p>
+                    <img src="images/fact-coast.jpeg" width="240"
+                        alt="Landscape of the peruvian coast, showing a cliff in the ocean.">
+                </div>
+                <div class="card">
+                    <h3>Andes</h3>
+                    <p>The Andes Mountains have a wide range of climates, from cold high-altitude peaks to temperate
+                        valleys.
+                        Snowfall is common at higher elevations.</p>
+                    <img src="images/fact-andes.jpg" width="240"
+                        alt="Landscape of the peruvian andes, showing a snow-capped mountain.">
+                </div>
+                <div class="card">
+                    <h3>Amazon</h3>
+                    <p>The Amazon basin in eastern Peru is hot and humid year-round, with heavy rainfall and dense
+                        tropical
+                        rainforest vegetation.</p>
+                    <img src="images/fact-amazon.jpg" width="240" alt="Landscape of the peruvian rainforest">
+                </div>
+                <div class=" card">
+                    <h3>Geology</h3>
+                    <p>The Andes Mountains dominate the country, with volcanoes (like Misti) and high peaks (like
+                        Huascarán)</p>
+                    <img src="images/fact-misti.jpeg" width="240"
+                        alt="Misti Volcano, an inactive volcano covered in snow at its summit. Located in Arequipa">
+                </div>
+                <div class="card">
+                    <h3>Biodiversity</h3>
+                    <p>Peru is one of the most biodiverse countries in the world, home to the Amazon rainforest and
+                        coastal
+                        deserts.</p>
+                    <img src="images/fact-amazonriver.jpg" width="240"
+                        alt="The Amazon River crossing Peru's rainforest">
+                </div>
+            </div>
         </section>
+        <section class="culture-gastronomy">
+            <section class="culture">
+                <h2>◇ Culture ◇</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Festivals</h3>
+                        <p>Carnivals, Inti Raymi, and religious festivals showcase Peru's cultural richness.</p>
+                        <img src="images/culture-inti-raymi.jpeg" width=" 340"
+                            alt="Inti-Raymi, one of the most well-known festivals from Peru">
+                    </div>
+                    <div class="card">
+                        <h3>Languages</h3>
+                        <p>Spanish, Quechua, and Aymara are widely spoken in the Andean region of the country.</p>
+                        <img src="images/culture-quechua.jpeg" width=" 340" alt="Native Quechua speakers">
+                    </div>
+                </div>
+            </section>
 
-        <section class="places-grid">
-            <article class="place-card">
-                <img src="images/place1.webp" alt="Place 1 example" loading="lazy">
-                <h3>Machu Picchu</h3>
-                <p>One of the New Seven Wonders of the World, located in Cusco.</p>
-            </article>
-
-            <article class="place-card">
-                <img src="images/place2.webp" alt="Place 2 example" loading="lazy">
-                <h3>Arequipa</h3>
-                <p>The “White City,” famous for its colonial architecture and volcano views.</p>
-            </article>
-
-            <article class="place-card">
-                <img src="images/place3.webp" alt="Place 3 example" loading="lazy">
-                <h3>Paracas & Nazca</h3>
-                <p>Coastal wildlife reserves and the mysterious Nazca Lines.</p>
-            </article>
+            <section class="gastronomy">
+                <h2>◇ Gastronomy ◇</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Ceviche</h3>
+                        <p>Peru's famous dish made with fresh fish marinated in citrus juices and spices.</p>
+                        <img src="images/gastronomy-ceviche.jpg" width=" 340" alt="A plate of ceviche">
+                    </div>
+                    <div class="card">
+                        <h3>Other Delicacies</h3>
+                        <p>Lomo Saltado, Aji de Gallina, and Pisco Sour highlight the culinary diversity.</p>
+                        <img src="images/gastronomy-lomo-saltado.jpg" width=" 340" alt="A plate of lomo saltado">
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
     <footer>
-        <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
-        <h4>Last Modification: <span id="last-modified"></span></h4>
+        <div class="footer-author">
+            <h3>©<span id="year"></span> ◈ Alex Mori ◈ Peru</h3>
+            <h4>Last Modification: <span id="last-modified"></span></h4>
+        </div>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebooklogo.png" alt="Facebook Icon" width="50">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagramlogo.png" alt="Instagram Icon" width="50">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtubelogo.png" alt="YouTube Icon" width="50">
+            </a>
+        </nav>
     </footer>
-
-    <script src="scripts/project.js"></script>
 </body>
 
 </html>
